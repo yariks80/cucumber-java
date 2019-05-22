@@ -12,3 +12,7 @@ dependencies {
 repositories {
     mavenCentral()
 }
+task myTest(type:Test){
+    useJUnit()
+}
+
