@@ -13,6 +13,9 @@ repositories {
     mavenCentral()
 }
 task myTest(type:Test){
-    useJUnit()
+    doLast {
+        include "TestRun.java"
+    }
+
 }
 
