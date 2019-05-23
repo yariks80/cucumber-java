@@ -7,6 +7,9 @@ import cucumber.api.java.en.When;
 public class Stepdefs {
     @Given("^I have (\\d+) cukes in my belly$")
     public void I_have_cukes_in_my_belly(int cukes) throws Throwable {
+        System.setProperty("javax.net.ssl.trustStore", "/absolute/file/location/java/application/keystore");
+        System.setProperty("javax.net.ssl.trustStrore", "cacerts.jks");
+
         Belly belly = new Belly();
         belly.eat(cukes);
     }
