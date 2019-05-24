@@ -1,10 +1,8 @@
 package io.cucumber.skeleton;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-import org.junit.runner.RunWith;
 
-@RunWith(Cucumber.class)
+
 @CucumberOptions(
 
         plugin = {
@@ -13,7 +11,7 @@ import org.junit.runner.RunWith;
                 "pretty",
         },
 
-        features = {"src\\test\\resources\\io\\cucumber\\skeleton"},
+        features = {"src/features"},
         monochrome = true,
         glue = {"io.cucumber.skeleton"},
         tags = {"~@ignored"}
